@@ -5,16 +5,16 @@
   
   <title>JeongHoon&#39;s Fancy Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="단위변환기 최종 요구사항 구현  구현시간 : 구상시간포함 2일 추가적으로 구현해야했던 내용  단위가 하나만 입력되면 해당단위가 포함된 모든 단위로 변환해야함 “1.83m inch,yard”라고 입력하면 1.83 미터 값을 각각 인치, 야드 단위로만 바꿔서 출력한다. 프로그램을 시작하면 사용자가 입력해서 변환이 가능한 단위들을 메뉴처럼 표시한다. 사용자가 입">
+  <meta name="description" content="단위변환기 최종 요구사항 구현 구현시간 : 구상시간포함 2일 추가적으로 구현해야했던 내용 단위가 하나만 입력되면 해당단위가 포함된 모든 단위로 변환해야함 “1.83m inch,yard”라고 입력하면 1.83 미터 값을 각각 인치, 야드 단위로만 바꿔서 출력한다. 프로그램을 시작하면 사용자가 입력해서 변환이 가능한 단위들을 메뉴처럼 표시한다. 사용자가 입력할">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JeongHoon&#39;s Fancy Blog">
 <meta property="og:url" content="http://yoursite.com/2017/10/31/unitConvertor/index.html">
 <meta property="og:site_name" content="JeongHoon&#39;s Fancy Blog">
-<meta property="og:description" content="단위변환기 최종 요구사항 구현  구현시간 : 구상시간포함 2일 추가적으로 구현해야했던 내용  단위가 하나만 입력되면 해당단위가 포함된 모든 단위로 변환해야함 “1.83m inch,yard”라고 입력하면 1.83 미터 값을 각각 인치, 야드 단위로만 바꿔서 출력한다. 프로그램을 시작하면 사용자가 입력해서 변환이 가능한 단위들을 메뉴처럼 표시한다. 사용자가 입">
-<meta property="og:updated_time" content="2017-10-31T06:06:52.000Z">
+<meta property="og:description" content="단위변환기 최종 요구사항 구현 구현시간 : 구상시간포함 2일 추가적으로 구현해야했던 내용 단위가 하나만 입력되면 해당단위가 포함된 모든 단위로 변환해야함 “1.83m inch,yard”라고 입력하면 1.83 미터 값을 각각 인치, 야드 단위로만 바꿔서 출력한다. 프로그램을 시작하면 사용자가 입력해서 변환이 가능한 단위들을 메뉴처럼 표시한다. 사용자가 입력할">
+<meta property="og:updated_time" content="2017-10-31T06:30:20.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JeongHoon&#39;s Fancy Blog">
-<meta name="twitter:description" content="단위변환기 최종 요구사항 구현  구현시간 : 구상시간포함 2일 추가적으로 구현해야했던 내용  단위가 하나만 입력되면 해당단위가 포함된 모든 단위로 변환해야함 “1.83m inch,yard”라고 입력하면 1.83 미터 값을 각각 인치, 야드 단위로만 바꿔서 출력한다. 프로그램을 시작하면 사용자가 입력해서 변환이 가능한 단위들을 메뉴처럼 표시한다. 사용자가 입">
+<meta name="twitter:description" content="단위변환기 최종 요구사항 구현 구현시간 : 구상시간포함 2일 추가적으로 구현해야했던 내용 단위가 하나만 입력되면 해당단위가 포함된 모든 단위로 변환해야함 “1.83m inch,yard”라고 입력하면 1.83 미터 값을 각각 인치, 야드 단위로만 바꿔서 출력한다. 프로그램을 시작하면 사용자가 입력해서 변환이 가능한 단위들을 메뉴처럼 표시한다. 사용자가 입력할">
   
     <link rel="alternate" href="/atom.xml" title="JeongHoon&#39;s Fancy Blog" type="application/atom+xml">
   
@@ -52,9 +52,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -75,256 +75,76 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>단위변환기 최종 요구사항 구현</p>
-<ol>
+        <h2 id="단위변환기-최종-요구사항-구현"><a href="#단위변환기-최종-요구사항-구현" class="headerlink" title="단위변환기 최종 요구사항 구현"></a>단위변환기 최종 요구사항 구현</h2><ol>
 <li>구현시간 : 구상시간포함 2일</li>
-<li><p>추가적으로 구현해야했던 내용</p>
-<ul>
+<li>추가적으로 구현해야했던 내용<ul>
 <li>단위가 하나만 입력되면 해당단위가 포함된 모든 단위로 변환해야함</li>
 <li>“1.83m inch,yard”라고 입력하면 1.83 미터 값을 각각 인치, 야드 단위로만 바꿔서 출력한다.</li>
 <li>프로그램을 시작하면 사용자가 입력해서 변환이 가능한 단위들을 메뉴처럼 표시한다.</li>
 <li>사용자가 입력할 때 실수를 덜하도록 유도하는 방법을 고민해본다.</li>
 </ul>
 </li>
-<li><p>문제해결과정<br>&lt;기존틀을 최대한 유지하면서 기능을 추가하기 위해 생각하는 시간이 오래걸렸다&gt;</p>
+</ol>
+<ol>
+<li><p>문제해결과정</p>
+<p><strong>&lt;기존틀을 최대한 유지하면서 기능을 추가하기 위해 생각하는 시간이 오래걸렸다&gt;</strong></p>
 <ul>
-<li>구조체를 단위별로 구분<br>기존에는 단위의 이름만 구성된 구조체와, 딕셔너리로 이루어진 구조체로 구분되어 있었는데<br>효율적인 구성을 위해, 단위의 큰틀로 구조체를 구분하였다.<br>길이/무게/부피 구조체</li>
+<li><p>구조체를 단위별로 구분</p>
+<blockquote>
+<p>기존에는 단위의 이름만 구성된 구조체와, 딕셔너리로 이루어진 구조체로 구분되어 있었는데</p>
+<p>효율적인 구성을 위해, 단위의 큰틀로 구조체를 구분하였다.</p>
+<p>길이/무게/부피 구조체</p>
+</blockquote>
+</li>
 </ul>
 </li>
 </ol>
 <ul>
-<li>함수 추가 및 공통된 함수끼리 묶음<ul>
+<li><p>함수 추가 및 공통된 함수끼리 묶음</p>
+<blockquote>
+<ul>
 <li>배열의 길이를 기준으로 문자열 리턴받는 함수를 구분하였다.</li>
 <li>해당단위가 속한 단위범주가 어떤단위인지 판단하는 함수</li>
-<li>출발단위와 목표단위가 상호변환가능한지 확인하는 함수<br>상기 함수가 쭉 나열되어 있어 읽기 힘든 코드가 되는것 같아서 공통되는 기능끼리 묶기로 했다.<br>그래서 기능별로 분리클래스, 체크클래스, 연산클래스로 묶음</li>
+<li>출발단위와 목표단위가 상호변환가능한지 확인하는 함수</li>
 </ul>
+<p>상기 함수가 쭉 나열되어 있어 읽기 힘든 코드가 되는것 같아서 공통되는 기능끼리 묶기로 했다.</p>
+<p>그래서 <strong>기능별로 분리클래스, 체크클래스, 연산클래스로 묶음</strong></p>
+</blockquote>
 </li>
-<li>클래스간의 상속관계는 프로그램 구현흐름에 따라 정리<br>연산[체크(분리)] = 연산은 체크를 상속받았고, 체크는 분리를 상속받았다.</li>
-<li>하나의 단위를 여러 단위로 변환하는 문제<br>배열을 기준으로 하였고, 단위와 단위가 포함된 그룹을 매칭하는 함수를 추가해서 구현하였다.</li>
-<li>기존 연산함수의 변경<br>기존 연산함수의 큰틀(기본단위인지 아닌지 확인)은 유지하고, 이를 기준으로 최초단위의 그룹을 케이스별로<br>나누어 연산하였다.<br>&lt;처음엔 배열길이를 기준으로 하려고 하였으나, 코드가 길어져 이 방식으로 변경하였다.</li>
+<li><p>클래스간의 상속관계는 프로그램 구현흐름에 따라 정리</p>
+<blockquote>
+<p>연산[체크(분리)] = 연산은 체크를 상속받았고, 체크는 분리를 상속받았다.</p>
+</blockquote>
+</li>
+<li><p>하나의 단위를 여러 단위로 변환하는 문제</p>
+<blockquote>
+<p>배열을 기준으로 하였고, 단위와 단위가 포함된 그룹을 매칭하는 함수를 추가해서 구현하였다.</p>
+</blockquote>
+</li>
+<li><p>기존 연산함수의 변경</p>
+<blockquote>
+<p>기존 연산함수의 큰틀(기본단위인지 아닌지 확인)은 유지하고, 이를 기준으로 최초단위의 그룹을 케이스별로</p>
+<p>나누어 연산하였다.</p>
+<p>&lt;처음엔 배열길이를 기준으로 하려고 하였으나, 코드가 길어져 이 방식으로 변경하였다.</p>
+</blockquote>
+<p>​</p>
+</li>
 </ul>
 <ol>
-<li><p>개선할 사항<br>들여쓰기/줄바꿈은 마치 글을 쓸때 주요 내용 단위처럼 코드 동작 단위를 구분하는 기준이 됩니다.<br>함수내 들여쓰기 깊이가 계속해서 깊어지지 않도록 주의하세요. 다른 함수로 분리가능한지 고민해보세요.<br>튜플 타입으로 감싸는 개수가 많아지면 struct나 class로 대신하는 게 좋습니다.</p>
-<p> import Foundation</p>
-<p> // 1. 길이 구조체<br> struct LengthUnit {</p>
-<pre><code>enum UnitName: String { case cm, m, inch, yard }
-static let names = [UnitName.cm.rawValue, UnitName.m.rawValue, UnitName.inch.rawValue, UnitName.yard.rawValue]
-static let nameAndValue: [String: Float] = [UnitName.cm.rawValue: 1, UnitName.m.rawValue: 100, UnitName.inch.rawValue: 2.54, UnitName.yard.rawValue: 91.44]
-</code></pre><p> }</p>
-<p> // 2. 무게 구조체<br> struct WeightUnit {</p>
-<pre><code>enum UnitName: String { case g, kg, oz, lb }
-static let names = [UnitName.g.rawValue, UnitName.kg.rawValue, UnitName.oz.rawValue, UnitName.lb.rawValue]
-static let nameAndValue: [String: Float] = [UnitName.g.rawValue: 1, UnitName.kg.rawValue: 1000, UnitName.oz.rawValue: 28.3495, UnitName.lb.rawValue: 453.592]
-</code></pre><p> }</p>
-<p> // 3. 부피 구조체<br> struct VolumeUnit {</p>
-<pre><code>enum UnitName: String { case L, pt, qt, Gal }
-static let names = [UnitName.L.rawValue, UnitName.pt.rawValue, UnitName.qt.rawValue, UnitName.Gal.rawValue]
-static let nameAndValue: [String: Float] = [UnitName.L.rawValue: 1, UnitName.pt.rawValue: 0.473176, UnitName.qt.rawValue: 0.946353, UnitName.Gal.rawValue: 3.78541]
-</code></pre><p> }</p>
-<p> // 4. 단위 비교를 위한 열거형<br> enum UnitsType { case length, weight, volume, none }</p>
-<p> // 5. 분리클래스 : 인풋스트링을 기준으로 분리<br> class Separating {</p>
-<pre><code>// 5-1. 입력받은 값을 배열로 분리
-var (from, num, to): (String, String, [String]) = (&quot;&quot;, &quot;&quot;, [])
-func divideStringtoArray (_ input: String) -&gt; Array&lt;String&gt; {
-    let userInput = input
-    let temp = userInput.components(separatedBy: &quot; &quot;)
-    return temp // [&quot;123cm&quot;, &quot;inch,yard&quot;]
-}
-
-// 5-2. 배열로부터 기본단위 분리하기
-func findUnit (_ strArray: [String]) -&gt; String? {
-    let unitNamesAssortment = [LengthUnit.nameAndValue.keys, WeightUnit.nameAndValue.keys, VolumeUnit.nameAndValue.keys]
-    for unitNames in unitNamesAssortment {
-        for unitName in unitNames {
-            if strArray[0].contains(unitName) {
-                from = unitName
-                return from
-            }
-        }
-    }
-    return nil
-}
-
-// 5-3. 배열의 길이가 2일떄 배열을 문자열로 분리
-func divideTwoArray (_ input: [String], type unit: UnitsType ) -&gt; (String, String, Array&lt;String&gt;) {
-    from = findUnit(input) ?? &quot;&quot;
-    let frontString = input[0]
-    num += frontString.prefix(frontString.count - from.count)
-    if input[1].contains(&quot;,&quot;) {
-        to += input[1].components(separatedBy: &quot;,&quot;)
-    } else {
-        to.append(input[1])
-    }
-    return (from, num, to)
-}
-
-// 5-4. 배열의 길이가 1일떄 배열을 문자열로 분리 &lt;이 부분이 보기 싫다. 어떻게 수정할 수 있을까&gt;
-func divideOneArray (_ input: [String], type unitType: UnitsType) -&gt; (String,  String, Array&lt;String&gt;) {
-    from = findUnit(input) ?? &quot;&quot;
-    let frontString = input[0]
-    num += frontString.prefix(frontString.count - from.count)
-    let unitNames = [LengthUnit.names, WeightUnit.names, VolumeUnit.names]
-    switch unitType {
-    case .length :
-        for unit in unitNames[0] {
-            if from != unit {
-                to.append(unit)
-            }
-        }
-    case .weight :
-        for unit in unitNames[1] {
-            if from != unit {
-                to.append(unit)
-            }
-        }
-    case .volume :
-        for unit in unitNames[2] {
-            if from != unit {
-                to.append(unit)
-            }
-        }
-    default : break
-    }
-    return (from, num, to)
-}
-</code></pre><p> }</p>
-<p> // 6. 체크클래스 : 단위를 근거로해서 체크하는 함수<br> class CheckUnit: Separating {</p>
-<pre><code>// 6-1. 해당단위가 속한 단위범주가 어떤단위인지 판단해주는 함수
-func checkUnitsType (_ inputUnit: String) -&gt; UnitsType {
-    var unitType : UnitsType = .none
-    if LengthUnit.UnitName.init(rawValue: inputUnit) != nil    { unitType = UnitsType.length }
-    else if WeightUnit.UnitName.init(rawValue: inputUnit) != nil{ unitType = UnitsType.weight }
-    else if VolumeUnit.UnitName.init(rawValue: inputUnit) != nil { unitType = UnitsType.volume }
-    return unitType
-}
-
-// 6-2. 기본단위인지 아닌지 판단하는 enum
-enum BaseUnit { case base, upper }
-
-// 6-3. 기본단위인지 아닌지 판단하는 함수
-func checkBaseOfUnit (_ input: String) -&gt; BaseUnit {
-    var result: BaseUnit
-    switch input {
-    case LengthUnit.UnitName.cm.rawValue : result = BaseUnit.base
-    case WeightUnit.UnitName.g.rawValue : result = BaseUnit.base
-    case VolumeUnit.UnitName.L.rawValue : result = BaseUnit.base
-    default : result = BaseUnit.upper
-    }
-    return result
-}
-
-// 6-3. 출발단위와 목표단위가 상호 변환가능한 단위인지 확인
-func compareUnitType (_ fromUnit: String, _ Units: [String]) -&gt; Bool {
-    var isPossibleConvert: Bool = false
-    let fromUnit = checkUnitsType(from)     // cm이면 length
-    var targetUnit: UnitsType
-    for unit in Units {
-        targetUnit = checkUnitsType(unit)
-        if fromUnit == targetUnit {
-            isPossibleConvert = true
-        } else {
-            isPossibleConvert = false
-        }
-    }
-    return isPossibleConvert
-}
-</code></pre><p> }</p>
-<p> // 7. 연산 클래스<br> class Operator: CheckUnit {</p>
-<pre><code>// 7-1. 연산함수  &lt;단순케이스 비교같다..있어보이게 변경할 수 없을까&gt;
-func convertNum (_ inputNum: String, _ from: String, _ toUnits: [String], _ isBaseUnit: BaseUnit, _ unitType: UnitsType) -&gt; String {
-    var result: String = &quot;&quot;
-    let inputNum: Float = Float(inputNum) ?? 0
-    for toUnit in toUnits {
-        if isBaseUnit == BaseUnit.base {
-            switch unitType {
-            case .length :
-                let length = LengthUnit.nameAndValue
-                result += String(inputNum / (length[toUnit] ?? 0)) + toUnit + &quot;\n&quot;
-            case .weight :
-                let weight = WeightUnit.nameAndValue
-                result += String(inputNum / (weight[toUnit] ?? 0)) + toUnit + &quot;\n&quot;
-            case .volume :
-                let volume = VolumeUnit.nameAndValue
-                result += String(inputNum / (volume[toUnit] ?? 0)) + toUnit + &quot;\n&quot;
-            default : break
-            }
-        } else if isBaseUnit == BaseUnit.upper {
-            switch unitType {
-            case .length :
-                let length = LengthUnit.nameAndValue
-                result += String((inputNum * (length[from]!) / (length[toUnit] ?? 0))) + toUnit + &quot;\n&quot;
-            case .weight :
-                let weight = WeightUnit.nameAndValue
-                result += String((inputNum * (weight[from]!)) / (weight[toUnit] ?? 0)) + toUnit + &quot;\n&quot;
-            case .volume :
-                let volume = VolumeUnit.nameAndValue
-                result += String((inputNum * (volume[from]!)) / (volume[toUnit] ?? 0)) + toUnit + &quot;\n&quot;
-            default : break
-            }
-        }
-    }
-    return result
-}
-</code></pre><p> }</p>
-<p> // 8. 모든 함수를 호출하여 값을 반환하는 함수   &lt;길어서 읽기가 힘들다, 프로그램 구현부와 역할분담을 해야할까?&gt;<br> func excuteConverting (_ userInput: String?) -&gt; String {</p>
-<pre><code>guard let userInput = userInput else { return &quot;&quot; }
-var result: String = &quot;&quot;
-let convert = Operator()
-var (num, targetUnits): (String, [String]) = (&quot;&quot;, [])
-let modifiedInput = convert.divideStringtoArray(userInput)
-var canConvert: Bool = false
-
-if var from = convert.findUnit(modifiedInput) {
-    let checkUnit = convert.checkUnitsType(from)
-    if modifiedInput.count == 2 {
-        (from, num, targetUnits) = convert.divideTwoArray(modifiedInput, type: checkUnit)
-        canConvert = convert.compareUnitType(from, targetUnits)
-        if canConvert == true {
-            let baseOrUpper = convert.checkBaseOfUnit(from)
-            result = convert.convertNum(num, from, targetUnits, baseOrUpper, convert.checkUnitsType(from))
-        } else  {
-            result += &quot;상호간의 변환할 수 업는 단위입니다&quot;
-        }
-    } else if modifiedInput.count == 1 {
-        (from, num, targetUnits) = convert.divideOneArray(modifiedInput, type: checkUnit)
-        canConvert = convert.compareUnitType(from, targetUnits)
-        if canConvert == true {
-            let baseOrUpper = convert.checkBaseOfUnit(from)
-            result = convert.convertNum(num, from, targetUnits, baseOrUpper, convert.checkUnitsType(from))
-        } else  {
-            result += &quot;상호간의 변환할 수 업는 단위입니다&quot;
-        }
-    }
-} else {
-    result += &quot;지원하지 않는 단위입니다.&quot;
-}
-return result
-</code></pre><p> }</p>
-<p> // 11. 출력<br> func printResult (_ result: String) { print(result) }</p>
-<p> // 12. 입력가능한 값을 출력하는 부분<br> func showConvertibleUnit() {</p>
-<pre><code>print(&quot;&quot;&quot;
-    &lt;입력예시&gt; 123m or 132cm inch or 132yard inch,m
-    길이 : \(LengthUnit.names)
-    무게 : \(WeightUnit.names)
-    부피 : \(VolumeUnit.names)
-    &quot;&quot;&quot;)
-</code></pre><p> }</p>
-<p> // 13. 프로그램 구현부<br> unitConvertLoop : while true {</p>
-<pre><code>showConvertibleUnit()
-print(&quot;변환 하고 싶으신 단위를 입력하세요 : &quot;, terminator: &quot;&quot;)
-let userInput = readLine()
-if userInput == &quot;q&quot; || userInput == &quot;quit&quot;
-{ print (&quot;프로그램이 종료됩니다.&quot;); break }
-printResult(excuteConverting(userInput))
-print(&quot;---------------------------\n&quot;)
-</code></pre><p> }</p>
+<li><p>개선할 사항</p>
+<blockquote>
+<p>들여쓰기/줄바꿈은 마치 글을 쓸때 주요 내용 단위처럼 코드 동작 단위를 구분하는 기준이 됩니다.</p>
+<p>함수내 들여쓰기 깊이가 계속해서 깊어지지 않도록 주의하세요. 다른 함수로 분리가능한지 고민해보세요.</p>
+<p>튜플 타입으로 감싸는 개수가 많아지면 struct나 class로 대신하는 게 좋습니다.</p>
+</blockquote>
 </li>
 </ol>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div><div class="line">217</div><div class="line">218</div><div class="line">219</div><div class="line">220</div><div class="line">221</div><div class="line">222</div><div class="line">223</div><div class="line">224</div><div class="line">225</div><div class="line">226</div><div class="line">227</div><div class="line">228</div><div class="line">229</div><div class="line">230</div><div class="line">231</div><div class="line">232</div><div class="line">233</div><div class="line">234</div><div class="line">235</div><div class="line">236</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> Foundation</div><div class="line"></div><div class="line"><span class="comment">// 1. 길이 구조체</span></div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">LengthUnit</span> </span>&#123;</div><div class="line">    <span class="class"><span class="keyword">enum</span> <span class="title">UnitName</span>: <span class="title">String</span> </span>&#123; <span class="keyword">case</span> cm, m, inch, yard &#125;</div><div class="line">    <span class="keyword">static</span> <span class="keyword">let</span> names = [<span class="type">UnitName</span>.cm.rawValue, <span class="type">UnitName</span>.m.rawValue, <span class="type">UnitName</span>.inch.rawValue, <span class="type">UnitName</span>.yard.rawValue]</div><div class="line">    <span class="keyword">static</span> <span class="keyword">let</span> nameAndValue: [<span class="type">String</span>: <span class="type">Float</span>] = [<span class="type">UnitName</span>.cm.rawValue: <span class="number">1</span>, <span class="type">UnitName</span>.m.rawValue: <span class="number">100</span>, <span class="type">UnitName</span>.inch.rawValue: <span class="number">2.54</span>, <span class="type">UnitName</span>.yard.rawValue: <span class="number">91.44</span>]</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 2. 무게 구조체</span></div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">WeightUnit</span> </span>&#123;</div><div class="line">    <span class="class"><span class="keyword">enum</span> <span class="title">UnitName</span>: <span class="title">String</span> </span>&#123; <span class="keyword">case</span> g, kg, oz, lb &#125;</div><div class="line">    <span class="keyword">static</span> <span class="keyword">let</span> names = [<span class="type">UnitName</span>.g.rawValue, <span class="type">UnitName</span>.kg.rawValue, <span class="type">UnitName</span>.oz.rawValue, <span class="type">UnitName</span>.lb.rawValue]</div><div class="line">    <span class="keyword">static</span> <span class="keyword">let</span> nameAndValue: [<span class="type">String</span>: <span class="type">Float</span>] = [<span class="type">UnitName</span>.g.rawValue: <span class="number">1</span>, <span class="type">UnitName</span>.kg.rawValue: <span class="number">1000</span>, <span class="type">UnitName</span>.oz.rawValue: <span class="number">28.3495</span>, <span class="type">UnitName</span>.lb.rawValue: <span class="number">453.592</span>]</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 3. 부피 구조체</span></div><div class="line"><span class="class"><span class="keyword">struct</span> <span class="title">VolumeUnit</span> </span>&#123;</div><div class="line">    <span class="class"><span class="keyword">enum</span> <span class="title">UnitName</span>: <span class="title">String</span> </span>&#123; <span class="keyword">case</span> <span class="type">L</span>, pt, qt, <span class="type">Gal</span> &#125;</div><div class="line">    <span class="keyword">static</span> <span class="keyword">let</span> names = [<span class="type">UnitName</span>.<span class="type">L</span>.rawValue, <span class="type">UnitName</span>.pt.rawValue, <span class="type">UnitName</span>.qt.rawValue, <span class="type">UnitName</span>.<span class="type">Gal</span>.rawValue]</div><div class="line">    <span class="keyword">static</span> <span class="keyword">let</span> nameAndValue: [<span class="type">String</span>: <span class="type">Float</span>] = [<span class="type">UnitName</span>.<span class="type">L</span>.rawValue: <span class="number">1</span>, <span class="type">UnitName</span>.pt.rawValue: <span class="number">0.473176</span>, <span class="type">UnitName</span>.qt.rawValue: <span class="number">0.946353</span>, <span class="type">UnitName</span>.<span class="type">Gal</span>.rawValue: <span class="number">3.78541</span>]</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 4. 단위 비교를 위한 열거형</span></div><div class="line"><span class="class"><span class="keyword">enum</span> <span class="title">UnitsType</span> </span>&#123; <span class="keyword">case</span> length, weight, volume, <span class="keyword">none</span> &#125;</div><div class="line"></div><div class="line"><span class="comment">// 5. 분리클래스 : 인풋스트링을 기준으로 분리</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Separating</span> </span>&#123;</div><div class="line">    <span class="comment">// 5-1. 입력받은 값을 배열로 분리</span></div><div class="line">    <span class="keyword">var</span> (from, num, to): (<span class="type">String</span>, <span class="type">String</span>, [<span class="type">String</span>]) = (<span class="string">""</span>, <span class="string">""</span>, [])</div><div class="line">    <span class="function"><span class="keyword">func</span> <span class="title">divideStringtoArray</span> <span class="params">(<span class="number">_</span> input: String)</span></span> -&gt; <span class="type">Array</span>&lt;<span class="type">String</span>&gt; &#123;</div><div class="line">        <span class="keyword">let</span> userInput = input</div><div class="line">        <span class="keyword">let</span> temp = userInput.components(separatedBy: <span class="string">" "</span>)</div><div class="line">        <span class="keyword">return</span> temp <span class="comment">// ["123cm", "inch,yard"]</span></div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="comment">// 5-2. 배열로부터 기본단위 분리하기</span></div><div class="line">    <span class="function"><span class="keyword">func</span> <span class="title">findUnit</span> <span class="params">(<span class="number">_</span> strArray: [String])</span></span> -&gt; <span class="type">String</span>? &#123;</div><div class="line">        <span class="keyword">let</span> unitNamesAssortment = [<span class="type">LengthUnit</span>.nameAndValue.keys, <span class="type">WeightUnit</span>.nameAndValue.keys, <span class="type">VolumeUnit</span>.nameAndValue.keys]</div><div class="line">        <span class="keyword">for</span> unitNames <span class="keyword">in</span> unitNamesAssortment &#123;</div><div class="line">            <span class="keyword">for</span> unitName <span class="keyword">in</span> unitNames &#123;</div><div class="line">                <span class="keyword">if</span> strArray[<span class="number">0</span>].<span class="built_in">contains</span>(unitName) &#123;</div><div class="line">                    from = unitName</div><div class="line">                    <span class="keyword">return</span> from</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> <span class="literal">nil</span></div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="comment">// 5-3. 배열의 길이가 2일떄 배열을 문자열로 분리</span></div><div class="line">    <span class="function"><span class="keyword">func</span> <span class="title">divideTwoArray</span> <span class="params">(<span class="number">_</span> input: [String], type unit: UnitsType )</span></span> -&gt; (<span class="type">String</span>, <span class="type">String</span>, <span class="type">Array</span>&lt;<span class="type">String</span>&gt;) &#123;</div><div class="line">        from = findUnit(input) ?? <span class="string">""</span></div><div class="line">        <span class="keyword">let</span> frontString = input[<span class="number">0</span>]</div><div class="line">        num += frontString.<span class="keyword">prefix</span>(frontString.<span class="built_in">count</span> - from.<span class="built_in">count</span>)</div><div class="line">        <span class="keyword">if</span> input[<span class="number">1</span>].<span class="built_in">contains</span>(<span class="string">","</span>) &#123;</div><div class="line">            to += input[<span class="number">1</span>].components(separatedBy: <span class="string">","</span>)</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            to.append(input[<span class="number">1</span>])</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> (from, num, to)</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="comment">// 5-4. 배열의 길이가 1일떄 배열을 문자열로 분리 &lt;이 부분이 보기 싫다. 어떻게 수정할 수 있을까&gt;</span></div><div class="line">    <span class="function"><span class="keyword">func</span> <span class="title">divideOneArray</span> <span class="params">(<span class="number">_</span> input: [String], type unitType: UnitsType)</span></span> -&gt; (<span class="type">String</span>,  <span class="type">String</span>, <span class="type">Array</span>&lt;<span class="type">String</span>&gt;) &#123;</div><div class="line">        from = findUnit(input) ?? <span class="string">""</span></div><div class="line">        <span class="keyword">let</span> frontString = input[<span class="number">0</span>]</div><div class="line">        num += frontString.<span class="keyword">prefix</span>(frontString.<span class="built_in">count</span> - from.<span class="built_in">count</span>)</div><div class="line">        <span class="keyword">let</span> unitNames = [<span class="type">LengthUnit</span>.names, <span class="type">WeightUnit</span>.names, <span class="type">VolumeUnit</span>.names]</div><div class="line">        <span class="keyword">switch</span> unitType &#123;</div><div class="line">        <span class="keyword">case</span> .length :</div><div class="line">            <span class="keyword">for</span> unit <span class="keyword">in</span> unitNames[<span class="number">0</span>] &#123;</div><div class="line">                <span class="keyword">if</span> from != unit &#123;</div><div class="line">                    to.append(unit)</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        <span class="keyword">case</span> .weight :</div><div class="line">            <span class="keyword">for</span> unit <span class="keyword">in</span> unitNames[<span class="number">1</span>] &#123;</div><div class="line">                <span class="keyword">if</span> from != unit &#123;</div><div class="line">                    to.append(unit)</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        <span class="keyword">case</span> .volume :</div><div class="line">            <span class="keyword">for</span> unit <span class="keyword">in</span> unitNames[<span class="number">2</span>] &#123;</div><div class="line">                <span class="keyword">if</span> from != unit &#123;</div><div class="line">                    to.append(unit)</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        <span class="keyword">default</span> : <span class="keyword">break</span></div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> (from, num, to)</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 6. 체크클래스 : 단위를 근거로해서 체크하는 함수</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">CheckUnit</span>: <span class="title">Separating</span> </span>&#123;</div><div class="line">    </div><div class="line">    <span class="comment">// 6-1. 해당단위가 속한 단위범주가 어떤단위인지 판단해주는 함수</span></div><div class="line">    <span class="function"><span class="keyword">func</span> <span class="title">checkUnitsType</span> <span class="params">(<span class="number">_</span> inputUnit: String)</span></span> -&gt; <span class="type">UnitsType</span> &#123;</div><div class="line">        <span class="keyword">var</span> unitType : <span class="type">UnitsType</span> = .<span class="keyword">none</span></div><div class="line">        <span class="keyword">if</span> <span class="type">LengthUnit</span>.<span class="type">UnitName</span>.<span class="keyword">init</span>(rawValue: inputUnit) != <span class="literal">nil</span>    &#123; unitType = <span class="type">UnitsType</span>.length &#125;</div><div class="line">        <span class="keyword">else</span> <span class="keyword">if</span> <span class="type">WeightUnit</span>.<span class="type">UnitName</span>.<span class="keyword">init</span>(rawValue: inputUnit) != <span class="literal">nil</span>&#123; unitType = <span class="type">UnitsType</span>.weight &#125;</div><div class="line">        <span class="keyword">else</span> <span class="keyword">if</span> <span class="type">VolumeUnit</span>.<span class="type">UnitName</span>.<span class="keyword">init</span>(rawValue: inputUnit) != <span class="literal">nil</span> &#123; unitType = <span class="type">UnitsType</span>.volume &#125;</div><div class="line">        <span class="keyword">return</span> unitType</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="comment">// 6-2. 기본단위인지 아닌지 판단하는 enum</span></div><div class="line">    <span class="class"><span class="keyword">enum</span> <span class="title">BaseUnit</span> </span>&#123; <span class="keyword">case</span> base, upper &#125;</div><div class="line">    </div><div class="line">    <span class="comment">// 6-3. 기본단위인지 아닌지 판단하는 함수</span></div><div class="line">    <span class="function"><span class="keyword">func</span> <span class="title">checkBaseOfUnit</span> <span class="params">(<span class="number">_</span> input: String)</span></span> -&gt; <span class="type">BaseUnit</span> &#123;</div><div class="line">        <span class="keyword">var</span> result: <span class="type">BaseUnit</span></div><div class="line">        <span class="keyword">switch</span> input &#123;</div><div class="line">        <span class="keyword">case</span> <span class="type">LengthUnit</span>.<span class="type">UnitName</span>.cm.rawValue : result = <span class="type">BaseUnit</span>.base</div><div class="line">        <span class="keyword">case</span> <span class="type">WeightUnit</span>.<span class="type">UnitName</span>.g.rawValue : result = <span class="type">BaseUnit</span>.base</div><div class="line">        <span class="keyword">case</span> <span class="type">VolumeUnit</span>.<span class="type">UnitName</span>.<span class="type">L</span>.rawValue : result = <span class="type">BaseUnit</span>.base</div><div class="line">        <span class="keyword">default</span> : result = <span class="type">BaseUnit</span>.upper</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> result</div><div class="line">    &#125;</div><div class="line">    </div><div class="line">    <span class="comment">// 6-3. 출발단위와 목표단위가 상호 변환가능한 단위인지 확인</span></div><div class="line">    <span class="function"><span class="keyword">func</span> <span class="title">compareUnitType</span> <span class="params">(<span class="number">_</span> fromUnit: String, <span class="number">_</span> Units: [String])</span></span> -&gt; <span class="type">Bool</span> &#123;</div><div class="line">        <span class="keyword">var</span> isPossibleConvert: <span class="type">Bool</span> = <span class="literal">false</span></div><div class="line">        <span class="keyword">let</span> fromUnit = checkUnitsType(from)     <span class="comment">// cm이면 length</span></div><div class="line">        <span class="keyword">var</span> targetUnit: <span class="type">UnitsType</span></div><div class="line">        <span class="keyword">for</span> unit <span class="keyword">in</span> <span class="type">Units</span> &#123;</div><div class="line">            targetUnit = checkUnitsType(unit)</div><div class="line">            <span class="keyword">if</span> fromUnit == targetUnit &#123;</div><div class="line">                isPossibleConvert = <span class="literal">true</span></div><div class="line">            &#125; <span class="keyword">else</span> &#123;</div><div class="line">                isPossibleConvert = <span class="literal">false</span></div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> isPossibleConvert</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 7. 연산 클래스</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Operator</span>: <span class="title">CheckUnit</span> </span>&#123;</div><div class="line">    <span class="comment">// 7-1. 연산함수  &lt;단순케이스 비교같다..있어보이게 변경할 수 없을까&gt;</span></div><div class="line">    <span class="function"><span class="keyword">func</span> <span class="title">convertNum</span> <span class="params">(<span class="number">_</span> inputNum: String, <span class="number">_</span> from: String, <span class="number">_</span> toUnits: [String], <span class="number">_</span> isBaseUnit: BaseUnit, <span class="number">_</span> unitType: UnitsType)</span></span> -&gt; <span class="type">String</span> &#123;</div><div class="line">        <span class="keyword">var</span> result: <span class="type">String</span> = <span class="string">""</span></div><div class="line">        <span class="keyword">let</span> inputNum: <span class="type">Float</span> = <span class="type">Float</span>(inputNum) ?? <span class="number">0</span></div><div class="line">        <span class="keyword">for</span> toUnit <span class="keyword">in</span> toUnits &#123;</div><div class="line">            <span class="keyword">if</span> isBaseUnit == <span class="type">BaseUnit</span>.base &#123;</div><div class="line">                <span class="keyword">switch</span> unitType &#123;</div><div class="line">                <span class="keyword">case</span> .length :</div><div class="line">                    <span class="keyword">let</span> length = <span class="type">LengthUnit</span>.nameAndValue</div><div class="line">                    result += <span class="type">String</span>(inputNum / (length[toUnit] ?? <span class="number">0</span>)) + toUnit + <span class="string">"\n"</span></div><div class="line">                <span class="keyword">case</span> .weight :</div><div class="line">                    <span class="keyword">let</span> weight = <span class="type">WeightUnit</span>.nameAndValue</div><div class="line">                    result += <span class="type">String</span>(inputNum / (weight[toUnit] ?? <span class="number">0</span>)) + toUnit + <span class="string">"\n"</span></div><div class="line">                <span class="keyword">case</span> .volume :</div><div class="line">                    <span class="keyword">let</span> volume = <span class="type">VolumeUnit</span>.nameAndValue</div><div class="line">                    result += <span class="type">String</span>(inputNum / (volume[toUnit] ?? <span class="number">0</span>)) + toUnit + <span class="string">"\n"</span></div><div class="line">                <span class="keyword">default</span> : <span class="keyword">break</span></div><div class="line">                &#125;</div><div class="line">            &#125; <span class="keyword">else</span> <span class="keyword">if</span> isBaseUnit == <span class="type">BaseUnit</span>.upper &#123;</div><div class="line">                <span class="keyword">switch</span> unitType &#123;</div><div class="line">                <span class="keyword">case</span> .length :</div><div class="line">                    <span class="keyword">let</span> length = <span class="type">LengthUnit</span>.nameAndValue</div><div class="line">                    result += <span class="type">String</span>((inputNum * (length[from]!) / (length[toUnit] ?? <span class="number">0</span>))) + toUnit + <span class="string">"\n"</span></div><div class="line">                <span class="keyword">case</span> .weight :</div><div class="line">                    <span class="keyword">let</span> weight = <span class="type">WeightUnit</span>.nameAndValue</div><div class="line">                    result += <span class="type">String</span>((inputNum * (weight[from]!)) / (weight[toUnit] ?? <span class="number">0</span>)) + toUnit + <span class="string">"\n"</span></div><div class="line">                <span class="keyword">case</span> .volume :</div><div class="line">                    <span class="keyword">let</span> volume = <span class="type">VolumeUnit</span>.nameAndValue</div><div class="line">                    result += <span class="type">String</span>((inputNum * (volume[from]!)) / (volume[toUnit] ?? <span class="number">0</span>)) + toUnit + <span class="string">"\n"</span></div><div class="line">                <span class="keyword">default</span> : <span class="keyword">break</span></div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> result</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 8. 모든 함수를 호출하여 값을 반환하는 함수   &lt;길어서 읽기가 힘들다, 프로그램 구현부와 역할분담을 해야할까?&gt;</span></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">excuteConverting</span> <span class="params">(<span class="number">_</span> userInput: String?)</span></span> -&gt; <span class="type">String</span> &#123;</div><div class="line">    <span class="keyword">guard</span> <span class="keyword">let</span> userInput = userInput <span class="keyword">else</span> &#123; <span class="keyword">return</span> <span class="string">""</span> &#125;</div><div class="line">    <span class="keyword">var</span> result: <span class="type">String</span> = <span class="string">""</span></div><div class="line">    <span class="keyword">let</span> convert = <span class="type">Operator</span>()</div><div class="line">    <span class="keyword">var</span> (num, targetUnits): (<span class="type">String</span>, [<span class="type">String</span>]) = (<span class="string">""</span>, [])</div><div class="line">    <span class="keyword">let</span> modifiedInput = convert.divideStringtoArray(userInput)</div><div class="line">    <span class="keyword">var</span> canConvert: <span class="type">Bool</span> = <span class="literal">false</span></div><div class="line">    </div><div class="line">    <span class="keyword">if</span> <span class="keyword">var</span> from = convert.findUnit(modifiedInput) &#123;</div><div class="line">        <span class="keyword">let</span> checkUnit = convert.checkUnitsType(from)</div><div class="line">        <span class="keyword">if</span> modifiedInput.<span class="built_in">count</span> == <span class="number">2</span> &#123;</div><div class="line">            (from, num, targetUnits) = convert.divideTwoArray(modifiedInput, type: checkUnit)</div><div class="line">            canConvert = convert.compareUnitType(from, targetUnits)</div><div class="line">            <span class="keyword">if</span> canConvert == <span class="literal">true</span> &#123;</div><div class="line">                <span class="keyword">let</span> baseOrUpper = convert.checkBaseOfUnit(from)</div><div class="line">                result = convert.convertNum(num, from, targetUnits, baseOrUpper, convert.checkUnitsType(from))</div><div class="line">            &#125; <span class="keyword">else</span>  &#123;</div><div class="line">                result += <span class="string">"상호간의 변환할 수 업는 단위입니다"</span></div><div class="line">            &#125;</div><div class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> modifiedInput.<span class="built_in">count</span> == <span class="number">1</span> &#123;</div><div class="line">            (from, num, targetUnits) = convert.divideOneArray(modifiedInput, type: checkUnit)</div><div class="line">            canConvert = convert.compareUnitType(from, targetUnits)</div><div class="line">            <span class="keyword">if</span> canConvert == <span class="literal">true</span> &#123;</div><div class="line">                <span class="keyword">let</span> baseOrUpper = convert.checkBaseOfUnit(from)</div><div class="line">                result = convert.convertNum(num, from, targetUnits, baseOrUpper, convert.checkUnitsType(from))</div><div class="line">            &#125; <span class="keyword">else</span>  &#123;</div><div class="line">                result += <span class="string">"상호간의 변환할 수 업는 단위입니다"</span></div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125; <span class="keyword">else</span> &#123;</div><div class="line">        result += <span class="string">"지원하지 않는 단위입니다."</span></div><div class="line">    &#125;</div><div class="line">    <span class="keyword">return</span> result</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 11. 출력</span></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">printResult</span> <span class="params">(<span class="number">_</span> result: String)</span></span> &#123; <span class="built_in">print</span>(result) &#125;</div><div class="line"></div><div class="line"><span class="comment">// 12. 입력가능한 값을 출력하는 부분</span></div><div class="line"><span class="function"><span class="keyword">func</span> <span class="title">showConvertibleUnit</span><span class="params">()</span></span> &#123;</div><div class="line">    <span class="built_in">print</span>(<span class="string">""</span><span class="string">"</span></div><div class="line"><span class="string">        &lt;입력예시&gt; 123m or 132cm inch or 132yard inch,m</span></div><div class="line"><span class="string">        길이 : <span class="subst">\(LengthUnit.names)</span></span></div><div class="line"><span class="string">        무게 : <span class="subst">\(WeightUnit.names)</span></span></div><div class="line"><span class="string">        부피 : <span class="subst">\(VolumeUnit.names)</span></span></div><div class="line"><span class="string">        "</span><span class="string">""</span>)</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="comment">// 13. 프로그램 구현부</span></div><div class="line">unitConvertLoop : <span class="keyword">while</span> <span class="literal">true</span> &#123;</div><div class="line">    showConvertibleUnit()</div><div class="line">    <span class="built_in">print</span>(<span class="string">"변환 하고 싶으신 단위를 입력하세요 : "</span>, terminator: <span class="string">""</span>)</div><div class="line">    <span class="keyword">let</span> userInput = <span class="built_in">readLine</span>()</div><div class="line">    <span class="keyword">if</span> userInput == <span class="string">"q"</span> || userInput == <span class="string">"quit"</span></div><div class="line">    &#123; <span class="built_in">print</span> (<span class="string">"프로그램이 종료됩니다."</span>); <span class="keyword">break</span> &#125;</div><div class="line">    printResult(excuteConverting(userInput))</div><div class="line">    <span class="built_in">print</span>(<span class="string">"---------------------------\n"</span>)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/31/unitConvertor/" data-id="cj9f7zqgr0000gopn13ciy9f6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/10/31/unitConvertor/" data-id="cj9f7zqgr0000gopn13ciy9f6" class="article-share-link">Partager</a>
       
       
     </footer>
@@ -358,7 +178,7 @@ print(&quot;---------------------------\n&quot;)
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -379,7 +199,7 @@ print(&quot;---------------------------\n&quot;)
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2017 JeongHoon<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
