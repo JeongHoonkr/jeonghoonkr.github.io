@@ -61,6 +61,45 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-hellojk" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/10/31/hellojk/" class="article-date">
+  <time datetime="2017-10-31T05:10:15.000Z" itemprop="datePublished">2017-10-31</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/10/31/hellojk/">hellojk</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>func makeARow() -&gt; String {<br>    // 랜덤으로 가로줄 생성<br>    let isExistent: Bool = arc4random_uniform(2) == 0 ? true : false<br>    guard  isExistent == true else{ return  “ “ }<br>    return “-“<br>}</p>
+<p>func printLadder (<em> numberOfParticipant: Int, </em> heightOfLadder: Int) {<br>    var (numberOfParticipant, heightOfLadder) = (numberOfParticipant, heightOfLadder)<br>    //전체줄 수 생성루프 (사다리 갯수만큼 생성)<br>    while 0 &lt; heightOfLadder {<br>        // 안쪽 가로선 및 가로선 우측선 랜덤생성 &lt;첫째줄은 이미 생성되기 떄문에 사람 수 -1)<br>        for _ in 0..&lt;numberOfParticipant-1 {<br>            print(“ㅣ”, terminator: makeARow())<br>        }<br>        // 외곽선(전체 줄) 생성<br>        print(“ㅣ”)<br>        heightOfLadder -= 1<br>    }<br>}</p>
+<p>ladderLoop : while (true) {<br>    print(“참여할 사람은 몇 명 인가요?”)<br>    // 사람수 입력값 바인딩 / 입력값 없거나 Int타입이 아닐경우 종료<br>    guard let numberOfPeople = readLine(),<br>                 let numberOfParticipant = Int(numberOfPeople) else {break}<br>    print(“최대 사다리 높이는 몇 개인가요?”)<br>    // 사다리<br>    // 입력값 바인딩 / 입력값 없거나 Int타입이 아닐경우 종료<br>    guard let countOfLadder = readLine(),<br>                 let numberOfLadder = Int(countOfLadder) else {break}<br>    // 사다리 출력함수 호출<br>    printLadder(numberOfParticipant, numberOfLadder)<br>}</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/10/31/hellojk/" data-id="cj9f5obpn0000dopnsdurhwuv" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hello-hun" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/10/31/hello-hun/" class="article-date">
@@ -87,7 +126,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/31/hello-hun/" data-id="cj9f4ts9a00012gpn54f1o51k" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/10/31/hello-hun/" data-id="cj9f5obpt0002dopnn8iov3ec" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hi/">hi</a></li></ul>
@@ -134,7 +173,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/10/31/hello-world/" data-id="cj9f4ts9500002gpnvak73vp4" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/10/31/hello-world/" data-id="cj9f5obpr0001dopnhbpkrkn1" class="article-share-link">Share</a>
       
       
     </footer>
@@ -186,6 +225,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2017/10/31/hellojk/">hellojk</a>
+          </li>
         
           <li>
             <a href="/2017/10/31/hello-hun/">hello-hun</a>

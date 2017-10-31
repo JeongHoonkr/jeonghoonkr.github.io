@@ -3,14 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2017/10 | Hexo</title>
+  <title>hellojk | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2017/10/index.html">
+  <meta name="description" content="func makeARow() -&amp;gt; String {    // 랜덤으로 가로줄 생성    let isExistent: Bool = arc4random_uniform(2) == 0 ? true : false    guard  isExistent == true else{ return  “ “ }    return “-“} func printLadder (">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hellojk">
+<meta property="og:url" content="http://yoursite.com/2017/10/31/hellojk/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="func makeARow() -&amp;gt; String {    // 랜덤으로 가로줄 생성    let isExistent: Bool = arc4random_uniform(2) == 0 ? true : false    guard  isExistent == true else{ return  “ “ }    return “-“} func printLadder (">
+<meta property="og:updated_time" content="2017-10-31T05:16:00.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="hellojk">
+<meta name="twitter:description" content="func makeARow() -&amp;gt; String {    // 랜덤으로 가로줄 생성    let isExistent: Bool = arc4random_uniform(2) == 0 ? true : false    guard  isExistent == true else{ return  “ “ }    return “-“} func printLadder (">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -59,77 +63,54 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/10/31/hellojk/" class="archive-article-date">
-  <time datetime="2017-10-31T05:10:15.000Z" itemprop="datePublished">Oct 31</time>
+        <section id="main"><article id="post-hellojk" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/10/31/hellojk/" class="article-date">
+  <time datetime="2017-10-31T05:10:15.000Z" itemprop="datePublished">2017-10-31</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/31/hellojk/">hellojk</a>
+    <h1 class="article-title" itemprop="name">
+      hellojk
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/10/31/hello-hun/" class="archive-article-date">
-  <time datetime="2017-10-31T04:43:34.000Z" itemprop="datePublished">Oct 31</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/31/hello-hun/">hello-hun</a>
-    </h1>
-  
+        <p>func makeARow() -&gt; String {<br>    // 랜덤으로 가로줄 생성<br>    let isExistent: Bool = arc4random_uniform(2) == 0 ? true : false<br>    guard  isExistent == true else{ return  “ “ }<br>    return “-“<br>}</p>
+<p>func printLadder (<em> numberOfParticipant: Int, </em> heightOfLadder: Int) {<br>    var (numberOfParticipant, heightOfLadder) = (numberOfParticipant, heightOfLadder)<br>    //전체줄 수 생성루프 (사다리 갯수만큼 생성)<br>    while 0 &lt; heightOfLadder {<br>        // 안쪽 가로선 및 가로선 우측선 랜덤생성 &lt;첫째줄은 이미 생성되기 떄문에 사람 수 -1)<br>        for _ in 0..&lt;numberOfParticipant-1 {<br>            print(“ㅣ”, terminator: makeARow())<br>        }<br>        // 외곽선(전체 줄) 생성<br>        print(“ㅣ”)<br>        heightOfLadder -= 1<br>    }<br>}</p>
+<p>ladderLoop : while (true) {<br>    print(“참여할 사람은 몇 명 인가요?”)<br>    // 사람수 입력값 바인딩 / 입력값 없거나 Int타입이 아닐경우 종료<br>    guard let numberOfPeople = readLine(),<br>                 let numberOfParticipant = Int(numberOfPeople) else {break}<br>    print(“최대 사다리 높이는 몇 개인가요?”)<br>    // 사다리<br>    // 입력값 바인딩 / 입력값 없거나 Int타입이 아닐경우 종료<br>    guard let countOfLadder = readLine(),<br>                 let numberOfLadder = Int(countOfLadder) else {break}<br>    // 사다리 출력함수 호출<br>    printLadder(numberOfParticipant, numberOfLadder)<br>}</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2017/10/31/hello-world/" class="archive-article-date">
-  <time datetime="2017-10-31T04:42:25.000Z" itemprop="datePublished">Oct 31</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/31/hello-world/">Hello World</a>
-    </h1>
-  
-
-    </header>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/10/31/hellojk/" data-id="cj9f5obpn0000dopnsdurhwuv" class="article-share-link">Share</a>
+      
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/10/31/hello-hun/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">hello-hun</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         
