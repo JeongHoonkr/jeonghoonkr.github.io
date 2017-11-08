@@ -3,15 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>JeongHoon&#39;s Fancy Blog</title>
+  <title>값타입과 참조타입 | JeongHoon&#39;s Fancy Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="JeongHoon&#39;s Fancy Blog">
+  <meta name="description" content="객체 스트럭트 클래스 값타입인 클래스를 쓰는 것이 더 좋다. 프로세스의 메모리모델   한 프로그램은 한 프로세스를 갖는다 스택 : 함수를 호출할때마다 함수 및 리턴되서 돌아갈주소 및 매개변수, 함수내의 선언된 변수,상수를 복사이렇게 쌓이는것을 콜스택이라고 한다.우리가 만드는 대부분의 변수 상수는 스택에 쌓인다. 함수호출 / 내부변수(상수) / 밸류타입의 인">
+<meta property="og:type" content="article">
+<meta property="og:title" content="값타입과 참조타입">
 <meta property="og:url" content="http://yoursite.com/2017/11/07/2017-11-07/index.html">
 <meta property="og:site_name" content="JeongHoon&#39;s Fancy Blog">
-<meta property="og:updated_time" content="2017-11-07T07:55:28.000Z">
+<meta property="og:description" content="객체 스트럭트 클래스 값타입인 클래스를 쓰는 것이 더 좋다. 프로세스의 메모리모델   한 프로그램은 한 프로세스를 갖는다 스택 : 함수를 호출할때마다 함수 및 리턴되서 돌아갈주소 및 매개변수, 함수내의 선언된 변수,상수를 복사이렇게 쌓이는것을 콜스택이라고 한다.우리가 만드는 대부분의 변수 상수는 스택에 쌓인다. 함수호출 / 내부변수(상수) / 밸류타입의 인">
+<meta property="og:updated_time" content="2017-11-08T02:01:51.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JeongHoon&#39;s Fancy Blog">
+<meta name="twitter:title" content="값타입과 참조타입">
+<meta name="twitter:description" content="객체 스트럭트 클래스 값타입인 클래스를 쓰는 것이 더 좋다. 프로세스의 메모리모델   한 프로그램은 한 프로세스를 갖는다 스택 : 함수를 호출할때마다 함수 및 리턴되서 돌아갈주소 및 매개변수, 함수내의 선언된 변수,상수를 복사이렇게 쌓이는것을 콜스택이라고 한다.우리가 만드는 대부분의 변수 상수는 스택에 쌓인다. 함수호출 / 내부변수(상수) / 밸류타입의 인">
   
     <link rel="alternate" href="/atom.xml" title="JeongHoon&#39;s Fancy Blog" type="application/atom+xml">
   
@@ -70,13 +73,41 @@
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      값타입과 참조타입
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>객체 스트럭트 클래스</p>
+<p>값타입인 클래스를 쓰는 것이 더 좋다.</p>
+<p>프로세스의 메모리모델  </p>
+<p>한 프로그램은 한 프로세스를 갖는다</p>
+<p>스택 : 함수를 호출할때마다 함수 및 리턴되서 돌아갈주소 및 매개변수, 함수내의 선언된 변수,상수를 복사<br>이렇게 쌓이는것을 콜스택이라고 한다.<br>우리가 만드는 대부분의 변수 상수는 스택에 쌓인다.</p>
+<p>함수호출 / 내부변수(상수) / 밸류타입의 인스턴스 </p>
+<p>힙<br>클래스의 인스턴스를 만들면 객체 ChocoMilk() 는 힙에 생기고 변수,상수 자체 var milk 는 스택에 생김<br>클로저를 객체처럼 쓰면 힙에 생긴다.</p>
+<p>한클래스가 두개의 인스턴스를 만들면 두개는 아이덴티티가 다르다<br>하지만 하나의인스턴스를 동일한 메모리주소로 갖는 변수는 이퀄리티가 있다라고한다.</p>
+<p>객체를 계속 만드는것보다 계속 참조해서 쓰는건지 판단해서 클래스 스트럭쳐 구분해서 써야한다.<br>여러군데서 참조하게 한다면 메모리관리가 중요해짐</p>
+<p>애플은 레퍼런스카운팅을 통해 객체가 참조하는 횟수를 세다가 참조가 끝나면 객체를 없앤다.</p>
+<p>객체 생명주기 {(생성(이닛) ~ 소멸(디이닛)} 중요  : 소멸 = 힙에있는 메모리를 없앤다는것</p>
+<p>스트롱 변수 : 자동으로 레퍼런스카운팅이 1인것<br>다른 콜렉션타입에 들어가도 해당 콜렉션타입을 삭제해야 객체가 소멸<br>변수는 nil을 넣어줘야 소멸</p>
+<p>사이클이 발생할 수 있는 참조는 강한참조순환 문제가 발생 (소멸되지 않는 문제)</p>
+<p>약한참조를 하고 있으면 참조하던 객체가 사라지면 약한참조변수는 자체가 nil로 바뀐다.</p>
+<p>상속과 소유관계는 다른얘기</p>
+<p>메모리를 가리키는것을 포인터라고 한다 (참조관계를 설명) , 참조</p>
+<p>weak var (let) </p>
+<p>스트럭쳐는 값타입이라 초기값이 없어도된다</p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/07/2017-11-07/" data-id="cj9qeee620001uopn8gzk1wm4" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/11/07/2017-11-07/" data-id="cj9qefo1f0000vipna4ld9bpb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -125,7 +156,7 @@
       <ul>
         
           <li>
-            <a href="/2017/11/07/2017-11-07/">(no title)</a>
+            <a href="/2017/11/07/2017-11-07/">값타입과 참조타입</a>
           </li>
         
           <li>
